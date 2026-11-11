@@ -1,21 +1,12 @@
 {
   "name": "support-tickets",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "API de gerenciamento de tickets de suporte",
+  "main": "src/server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --watch src/server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/paulomatheus/support-tickets.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/paulomatheus/support-tickets/issues"
-  },
-  "homepage": "https://github.com/paulomatheus/support-tickets#readme"
+  "author": "Paulo Matheus",
+  "license": "ISC"
 }
