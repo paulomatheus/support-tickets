@@ -1,13 +1,1 @@
-{
-    "tickets": [
-        {
-            "id": "18d74342-4546-406e-aaeb-7555ffa008d2",
-            "equipment": "Computador",
-            "description": "Computador não liga",
-            "user_name": "paulomatheus",
-            "status": "open",
-            "created_at": "2026-11-13T21:06:09.426Z",
-            "updated_at": "2026-11-13T21:06:09.426Z"
-        }
-    ]
-}
+{"tickets":[{"id":"18d74342-4546-406e-aaeb-7555ffa008d2","equipment":"Computador","description":"Computador não liga","user_name":"paulomatheus","status":"open","created_at":"2026-11-13T21:06:09.426Z","updated_at":"2026-11-13T21:06:09.426Z"},{"id":"9b9c0c73-bc4f-4deb-a064-2daba4a69a37","equipment":"Teclado","description":"Tecla nao funciona","user_name":"matheuspaulo","status":"open","created_at":"2026-11-13T22:19:32.445Z","updated_at":"2026-11-13T22:19:32.445Z"}]}

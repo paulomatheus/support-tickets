@@ -29,4 +29,9 @@ export class Database {
 
         this.#persist()
     }
+
+    select(table) {
+        let data = this.#database[table] ?? [] //se nao tiver devolve lista vazia
+        return data
+    }
 }
