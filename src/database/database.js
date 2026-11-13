@@ -19,4 +19,14 @@ export class Database {
     #persist(){
         fs.writeFile(DATABASE_PATH, JSON.stringify(this.#database)) //write cria o arquivo
     }
+
+    insert(table, data) {
+        if(Array.isArray(this.#database[table])) { //se encontrar table dentro do database: vdd
+            this.#database[table].push(data) //adiciona (push) dados
+        } else {
+            this.#database[table] = [data]
+        }
+
+        this.#persist()
+    }
 }

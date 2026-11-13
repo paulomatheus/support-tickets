@@ -1,6 +1,6 @@
 import { randomUUID } from "node:crypto"
 
-export function create({ request, response }) { //ordem dentro do objeto nao faz diferenca
+export function create({ request, response, database  }) { //ordem dentro do objeto nao faz diferenca
     const { equipment, description, user_name } = request.body
 
     const ticket = {
@@ -13,5 +13,7 @@ export function create({ request, response }) { //ordem dentro do objeto nao faz
         updated_at: new Date(),
     }
 
-    return response.end(JSON.stringify(ticket))
+    database.insert("tickets", ticket)
+
+    return response.writeHead(201).end(JSON.stringify(ticket))
 }
