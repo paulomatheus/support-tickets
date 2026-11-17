@@ -5,7 +5,12 @@ const database = new Database() //instancia da classe
 
 export function routeHandler(request, response) {
     const route = routes.find((route) => {
-        return route.method === request.method && route.path === request.url
+        return route.method === request.method && route.path.test(request.url)
+        /* 
+        route.path.test(request.url) pega a expressao regular de cada caminho (path)
+        testa se a url que está dentro da requisicao (request.url)
+        bate com o resto
+        */
     })
 
     if (route) {
